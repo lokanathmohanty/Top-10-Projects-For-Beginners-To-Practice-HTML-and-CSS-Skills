@@ -3,8 +3,6 @@
 Welcome to the **Top 10 Projects for Beginners** repository!  
 This is the perfect place for anyone starting out with **HTML** and **CSS** to get hands-on experience and build a solid foundation for web development. 🚀
 
----
-
 ## 📌 What’s Inside?
 
 This repository contains **10 beginner-friendly projects**, each carefully selected to help you learn and master:
@@ -44,29 +42,16 @@ This repo will help you:
 | 9 | **Restaurant Website UI**    | Multi-section food menu landing page        | 🔴 Advanced |
 |10 | **Responsive Portfolio**     | Fully responsive and mobile-friendly        | 🔴 Advanced |
 
----
-
-## 🚀 How to Use
-
-1. **Clone this repository**  
-```bash
-git clone https://github.com/lokanathmohanty/Top-10-Projects-For-Beginners-To-Practice-HTML-and-CSS-Skills.git
-
-Navigate to the folder
-
-bash
-cd Top-10-Projects-For-Beginners-To-Practice-HTML-and-CSS-Skills
-Open any project in your favorite code editor
-
 Run using Live Server (VS Code Extension) or open .html file in a browser.
 
 ✨ Live Demo Previews
-<img width="472" height="827" alt="Screenshot 2025-07-23 191652" src="https://github.com/user-attachments/assets/13c4b944-bdf5-407e-beaf-dae05c80fa49" />
 
-![Alt Text]("C:\Users\lokan\Pictures\Screenshots\Screenshot 2025-07-23 191652.png")
 
-Link - projecthtmlcss1to9.netlify.app
 
+Link - https://projecthtmlcss1to9.netlify.app/
+
+
+<img width="472" height="827" alt="Screenshot 2025-07-23 191652" src="https://github.com/user-attachments/assets/4f4f98e3-dd59-41ce-a193-a4cb994fd507" />
 
 
 🎯 Goals of These Projects
@@ -114,11 +99,4 @@ Connect with me for more learning content:
 
 
 
-
-
-
-
-
-
-Ask ChatGPT
 

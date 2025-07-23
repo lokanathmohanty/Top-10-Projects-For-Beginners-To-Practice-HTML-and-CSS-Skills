@@ -61,8 +61,11 @@ Open any project in your favorite code editor
 Run using Live Server (VS Code Extension) or open .html file in a browser.
 
 ✨ Live Demo Previews
-Coming soon!
-Add GitHub Pages or CodePen links for each project here to showcase your work. 🖼️
+<img width="472" height="827" alt="Screenshot 2025-07-23 191652" src="https://github.com/user-attachments/assets/bba320c0-28db-466d-892c-4c32f34cd47f" />
+
+
+Link - projecthtmlcss1to9.netlify.app
+
 
 🎯 Goals of These Projects
 Develop confidence in building HTML structure

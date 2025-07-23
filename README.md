@@ -61,7 +61,8 @@ Open any project in your favorite code editor
 Run using Live Server (VS Code Extension) or open .html file in a browser.
 
 ✨ Live Demo Previews
-<img width="472" height="827" alt="Screenshot 2025-07-23 191652" src="https://github.com/user-attachments/assets/bba320c0-28db-466d-892c-4c32f34cd47f" />
+
+<img width="472" height="827" alt="Screenshot 2025-07-23 191652" src="https://github.com/user-attachments/assets/be359140-1319-482c-9e93-51a21475ff87" />
 
 
 Link - projecthtmlcss1to9.netlify.app

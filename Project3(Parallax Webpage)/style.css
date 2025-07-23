@@ -1,0 +1,105 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.9em;
+  color: #666;
+  font-family: "lato", sans-serif;
+}
+
+.img1 {
+  background-image: url(img1.jpg);
+  min-height: 100%;
+}
+.img2 {
+  background-image: url(img2.webp);
+  min-height: 400px;
+}
+.img3 {
+  background-image: url(img3.jpg);
+  min-height: 450px;
+}
+
+.img1,
+.img2,
+.img3 {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.imgtext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+.textbg {
+  background-color: #313534;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.sectionlight {
+  text-align: center;
+  padding: 50px 80px;
+  background-color: #f4f4f4;
+  color: #666;
+  border-radius: 10px;
+}
+.sectiondark {
+  background-color: #282e34;
+  color: #ddd;
+  text-align: center;
+  padding: 50px 80px;
+  border-radius: 10px;
+}
+.click {
+  background-color: #313534;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.click:hover {
+  background-color: white;
+  color: green;
+  transition: 0.2s ease-in;
+}
+
+@media (max-width: 600px) {
+  .img1,
+  .img2,
+  .img3 {
+    background-attachment: scroll; /* Disable parallax on mobile for performance */
+    min-height: 200px;
+  }
+  .imgtext {
+    padding: 30px 10px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .textbg {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+  }
+  .sectionlight,
+  .sectiondark {
+    padding: 18px 10px;
+    font-size: 1rem;
+  }
+  .click {
+    font-size: 1rem;
+    padding: 8px 16px;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,528 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(120deg, #2980b9 60%, #e67e22 100%);
+  color: #fff;
+  padding: 40px 0 20px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: #ffd6a0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ffd6a0;
+}
+
+h2 {
+  color: #2980b9;
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  background: #e67e22;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 18px;
+  font-size: 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(44, 62, 80, 0.1);
+  padding: 24px;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(44, 62, 80, 0.14);
+}
+
+.project-card h3 {
+  margin: 8px 0 4px 0;
+  color: #e67e22;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #636e72;
+  margin-bottom: 8px;
+}
+
+.project-card a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.project-card a:hover {
+  color: #e67e22;
+}
+
+.toggle-project {
+  display: none;
+}
+
+.toggle-btn {
+  display: inline-block;
+  background: #2980b9;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  transition: background 0.2s;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.toggle-btn:hover {
+  background: #e67e22;
+}
+
+.project-link {
+  display: none;
+  margin-top: 10px;
+}
+
+.toggle-project:checked ~ .project-link {
+  display: block;
+}
+
+.project-link a {
+  color: #2980b9;
+  background: #f4f4f4;
+  padding: 8px 18px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+
+.project-link a:hover {
+  background: #e67e22;
+  color: #fff;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #e67e22;
+}
+
+footer {
+  background: #2d3436;
+  color: #fff;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+.contact-links {
+  margin: 24px 0 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+}
+.contact-links a {
+  color: #2980b9;
+  background: #fff;
+  padding: 8px 18px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+  border: 1px solid #e67e22;
+}
+.contact-links a:hover,
+.contact-links .btn:hover {
+  background: #e67e22;
+  color: #fff;
+}
+.contact-links i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+.certifications {
+  margin-top: 32px;
+  text-align: left;
+}
+.certifications h3 {
+  color: #636e72;
+  margin-bottom: 12px;
+}
+.certifications ul {
+  list-style: disc inside;
+  color: #636e72;
+  margin: 0;
+  padding-left: 18px;
+}
+.certifications li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  list-style: none;
+}
+.certifications i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+  margin-top: 34px;
+  margin-bottom: 24px;
+}
+.skills-icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+.skills-icons i {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  color: #2980b9;
+  transition: color 0.2s;
+}
+.skills-icons i:hover {
+  color: #e67e22;
+}
+.skills-icons span {
+  font-size: 1rem;
+}
+
+.hero-banner {
+  background: linear-gradient(120deg, #2980b9 60%, #e67e22 100%);
+  color: #fff;
+  padding: 60px 0 40px 0;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.1);
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.18);
+  margin-bottom: 12px;
+  border: 4px solid #fff;
+}
+.hero-title {
+  font-size: 1.6rem;
+  margin: 10px 0 18px 0;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.highlight {
+  color: #ffd6a0;
+  font-weight: bold;
+  background: #222;
+  padding: 2px 8px;
+  border-radius: 8px;
+}
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+  color: #fff;
+}
+.hero-words {
+  display: block;
+  font-size: 1.1rem;
+  color: #222;
+  background: #ffd6a0;
+  padding: 10px 18px;
+  border-radius: 18px;
+  margin-top: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+.hero-cta {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+.hero-cta .btn {
+  background: #fff;
+  color: #2980b9;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
+  transition: background 0.2s, color 0.2s;
+}
+.hero-cta .btn:hover {
+  background: #e67e22;
+  color: #fff;
+}
+
+.nav-btn {
+  display: inline-block;
+  background: #2980b9;
+  color: #fff;
+  padding: 6px 16px;
+  margin: 0 4px 8px 4px;
+  border-radius: 18px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  border: none;
+  outline: none;
+  text-align: center;
+  min-width: 80px;
+}
+.nav-btn:hover,
+.nav-btn:focus {
+  background: #e67e22;
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Show the toggle button on desktop */
+.nav-toggle {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+/* Hide nav links by default and show toggle only on mobile */
+@media (max-width: 700px) {
+  .nav-toggle {
+    display: inline-block;
+  }
+  nav .nav-btn {
+    display: none;
+  }
+  nav .nav-btn.nav-visible {
+    display: inline-block;
+  }
+}
+
+/* On desktop, always show nav links and hide toggle */
+@media (min-width: 701px) {
+  .nav-toggle {
+    display: none;
+  }
+  nav .nav-btn {
+    display: inline-block;
+  }
+}
+
+/*
+  Main site styles for layout, color, and responsiveness
+  ----------------------------------------------------
+  - No animation is used in this stylesheet.
+  - Only smooth hover transitions for buttons and nav links are present.
+*/
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+  .container {
+    padding: 12px;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  .skills-list li {
+    font-size: 0.95rem;
+    padding: 6px 12px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-content {
+    gap: 14px;
+  }
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+  .hero-title {
+    font-size: 1.1rem;
+  }
+  .tagline {
+    font-size: 1rem;
+  }
+  .hero-words {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 18px;
+  }
+  .nav-btn {
+    width: 100%;
+    min-width: unset;
+    font-size: 1rem;
+    margin: 0 0 8px 0;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav-btn {
+    width: 90vw;
+    min-width: unset;
+    font-size: 1.05rem;
+    margin: 0 0 10px 0;
+    padding: 12px 0;
+  }
+}
+
+/*
+  Button and nav link hover effect
+  -------------------------------
+  Provides a smooth scale effect on hover for interactive feedback.
+*/
+.toggle-btn,
+button[type="submit"],
+.nav-btn {
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.toggle-btn:hover,
+button[type="submit"]:hover,
+.nav-btn:hover {
+  transform: scale(1.07);
+}
+
+/* Fade-in animation for sections and project cards on page load (CSS only) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main section,
+.projects-grid .project-card {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+main section:nth-child(1) { animation-delay: 0.1s; }
+main section:nth-child(2) { animation-delay: 0.3s; }
+main section:nth-child(3) { animation-delay: 0.5s; }
+main section:nth-child(4) { animation-delay: 0.7s; }
+
+.projects-grid .project-card:nth-child(1) { animation-delay: 0.2s; }
+.projects-grid .project-card:nth-child(2) { animation-delay: 0.4s; }
+.projects-grid .project-card:nth-child(3) { animation-delay: 0.6s; }
+.projects-grid .project-card:nth-child(4) { animation-delay: 0.8s; }
+.projects-grid .project-card:nth-child(5) { animation-delay: 1.0s; }
+.projects-grid .project-card:nth-child(6) { animation-delay: 1.2s; }
+.projects-grid .project-card:nth-child(7) { animation-delay: 1.4s; }
+.projects-grid .project-card:nth-child(8) { animation-delay: 1.6s; }
+.projects-grid .project-card:nth-child(9) { animation-delay: 1.8s; }
+
+

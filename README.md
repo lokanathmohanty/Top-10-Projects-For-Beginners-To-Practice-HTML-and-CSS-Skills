@@ -48,7 +48,7 @@ Run using Live Server (VS Code Extension) or open .html file in a browser.
 
 
 
-Link - https://https://portfoliousinghtmcss.netlify.app/
+Link -  https://portfoliousinghtmcss.netlify.app/
 
 
 <img width="472" height="827" alt="Screenshot 2025-07-23 191652" src="https://github.com/user-attachments/assets/4f4f98e3-dd59-41ce-a193-a4cb994fd507" />
